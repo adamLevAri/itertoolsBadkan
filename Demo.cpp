@@ -13,6 +13,7 @@
 #include "zip_longest.hpp"
 #include "permutation.hpp"
 #include "filter_false.hpp"
+#include "output.h"
 
 #include <vector>
 using namespace itertools;
