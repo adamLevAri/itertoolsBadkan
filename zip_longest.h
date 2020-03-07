@@ -16,10 +16,10 @@ using namespace std;
 
 namespace itertools {
     template<typename T1, typename T2>
-    struct Zip_Longest {
+    struct zip_longest {
         const T1 first;
         const T2 second;
-        Zip_Longest(const T1& first, const T2& second): first(first), second(second) {}
+        zip_longest(const T1& first, const T2& second): first(first), second(second) {}
         typedef pair<decltype(*first.begin()), decltype(*second.begin())> PAIR;
         
         struct iterator {
