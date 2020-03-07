@@ -36,45 +36,45 @@ int main(int argc, const char * argv[]) {
     //Defined a final int for output
     cout << "####  Cycle:  ####" << endl;
     cout << "Finite<limit: 5 times> Cycle of numbers vector: " << endl;
-    for (auto i: Cycle(vecInit,5))
+    for (auto i: cycle(vecInit,5))
         cout << i;    // 1234 1234 1234 ...
     cout << endl << endl;
     
     cout << "####  Accumulate:  ####";
     cout << endl << "Accumulate of vector<string>: " << endl;
-    for (auto i: Accumulate(vecString) )
+    for (auto i: accumulate(vecString) )
         cout << i << " ";
     cout << endl << endl;
     
     cout << "####  Accumulate & Cycle:  ####";
     cout << endl << "Cycle of Accumulate of string vector: " << endl;
-    for (auto i: Cycle(Accumulate(vecString),2) )
+    for (auto i: cycle(Accumulate(vecString),2) )
         cout << i << " ";
     cout << endl << endl;
     
     cout << "####  Zip_Longest:  ####";
     cout << endl << "zip longest of vector<float> & vector<int>: " << endl;
-    for (auto i: Zip_Longest(vecFloat, vecInit) )
+    for (auto i: zip_longest(vecFloat, vecInit) )
         cout << i << " ";
     cout << endl << endl;
     
     cout << "####  Zip_Longest & Cycle:  ####";
     cout << endl << "zip longest of Cycle<vector:{1,2,3,4}> & Cycle<vector:{-1, 0.3, 5.2, -8.3}>: " << endl;
-    for (auto i: Zip_Longest(Cycle(vecInit,2), Cycle(vecFloat,2)) )
+    for (auto i: zip_longest(cycle(vecInit,2), cycle(vecFloat,2)) )
         cout << i << " ";
     cout << endl << endl;
     
     
     cout << "####  Permutation:  ####";
     cout << endl << "Permutation of vector:{1,2,3,4}" << endl;
-    for (auto i: Permutation(vecInit) )
+    for (auto i: permutation(vecInit) )
         cout << i;
     cout << endl << endl;
     
     
     cout << "####  Filter False:  ####";
     cout << endl << "Filter all numbers less than 3 in vector{1,2,3,4}: " << endl;
-    for (auto i: Filter_False(vecInit, lessThan()) )
+    for (auto i: filter_false(vecInit, lessThan()) )
     cout << i << " ";
     cout << endl << endl;
 
