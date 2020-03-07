@@ -6,27 +6,24 @@
 //  Copyright © 2020 Adam Lev-Ari. All rights reserved.
 //
 
-#include "badkan.hpp"
+#include "doctest.h"
 #include <iostream>
 
-
-int main(){
-
-    vector<int> vecInit = {1,2,3,4};
+TEST_CASE("Test case 1") {
+   vector<int> vecInit = {1,2,3,4};
     vector<string> vecString = {"Hello", "Bye", "Nathan", "Adam"};
     vector<float> vecFloat = {-1, 0.3, 5.2, -8.3};
     vector<string> resualt = {"Hello", "HelloBye", "HelloByeNathan", "HelloByeNathanAdam"};
     int index = 0;
     
-    badkan::TestCase testcase1;
     
-    for (auto i: Accumulate<vector<string>>(vecString)){
-        testcase1.setname("Filter_False tests")
-        .CHECK_OUTPUT(i, resualt.at(index))
-        .print();
-        index++;
-    }
+   CHECK((solve((2*x^2) - 4*x + 3 == 9)) == 3);
     
-    return 0;
+}
+
+TEST_CASE("Test case 2") {
+    
+   CHECK((solve((2*y^2) - 4*y + 3 == 9)) == 3);
+    
 }
 
