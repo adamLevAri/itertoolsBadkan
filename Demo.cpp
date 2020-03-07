@@ -8,12 +8,11 @@
 
 #include <iostream>
 
-#include "Cycle.h"
-#include "Accumulate.h"
-#include "Zip_Longest.h"
-#include "Permutation.h"
-#include "Filter_False.h"
-#include "output.h"
+#include "cycle.hpp"
+#include "accumulate.hpp"
+#include "zip_longest.hpp"
+#include "permutation.hpp"
+#include "filter_false.hpp"
 
 #include <vector>
 using namespace itertools;
