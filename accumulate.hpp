@@ -15,8 +15,8 @@ using namespace std;
 namespace itertools {
 
     template<typename T>
-        struct Accumulate {
-            Accumulate(const T& val): val(val) { }
+        struct accumulate {
+            accumulate(const T& val): val(val) { }
             const T val;
             typedef decltype(val.begin()) IT;
             
