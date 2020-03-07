@@ -14,13 +14,13 @@ using namespace std;
 namespace itertools {
 
     template<typename value_type, typename predicate_type>
-        struct Filter_False {
+        struct filter_false {
             value_type val;
             const predicate_type pred;
             typedef decltype(val.begin()) IT;
             IT It, ItBegin, ItEnd;
             
-            Filter_False(value_type& val, const predicate_type& pred): val(val), pred(pred), It(val.begin()), ItBegin(val.begin()), ItEnd(val.end()) {
+            filter_false(value_type& val, const predicate_type& pred): val(val), pred(pred), It(val.begin()), ItBegin(val.begin()), ItEnd(val.end()) {
                 
                 size_t i = 0;
                 for (auto& it : val) {
