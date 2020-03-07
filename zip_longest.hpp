@@ -6,8 +6,8 @@
 //  Copyright © 2020 Adam Lev-Ari. All rights reserved.
 //
 
-#ifndef Zip_Longest_h
-#define Zip_Longest_h
+#ifndef zip_longest_h
+#define zip_longest_h
 
 #include <utility>
 #include <iostream>
