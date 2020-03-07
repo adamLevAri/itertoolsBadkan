@@ -6,8 +6,8 @@
 //  Copyright © 2020 Adam Lev-Ari. All rights reserved.
 //
 
-#ifndef Permutation_h
-#define Permutation_h
+#ifndef permutation_h
+#define permutation_h
 //TODO: fix tempval size & set<generic> of operator*()
 
 #include <set>
@@ -19,7 +19,7 @@ using namespace std;
 namespace itertools {
 
     template<typename T>
-    struct Permutation {
+    struct permutation {
         
         const T val;
         typedef decltype(val.begin()) IT;
@@ -27,7 +27,7 @@ namespace itertools {
         IT It;
         uint SIZE = 0;
 
-        Permutation(const T& val, uint size = 0): val(val), SIZE(size) {
+        permutation(const T& val, uint size = 0): val(val), SIZE(size) {
             if (size == 0){
                 for (IT i=val.begin(); i!=val.end(); ++i)
                     ++SIZE;
