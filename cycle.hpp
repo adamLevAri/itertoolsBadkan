@@ -16,8 +16,8 @@ using namespace std;
 namespace itertools {
 
     template<typename T>
-        struct Cycle {
-            Cycle(const T& val, const int numOfIterate): val(val), numOfIterate(numOfIterate){ }
+        struct cycle {
+            cycle(const T& val, const int numOfIterate): val(val), numOfIterate(numOfIterate){ }
             const T val;
             int numOfIterate = 0;
             
