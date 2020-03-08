@@ -25,6 +25,27 @@ TEST_CASE("Test case 1") {
         CHECK(i == string(resualt.at(index)));
         index++;
     }
+
+    int index = 0;
+
+    for (auto i: accumulate(vecString)){
+        CHECK(i == string(resualt.at(index)));
+        index++;
+    }
+
+    int index = 0;
+
+    for (auto i: accumulate(vecString)){
+        CHECK(i == string(resualt.at(index)));
+        index++;
+    }
+
+    int index = 0;
+
+    for (auto i: accumulate(vecString)){
+        CHECK(i == string(resualt.at(index)));
+        index++;
+    }
     
 }
 
