@@ -32,9 +32,12 @@ TEST_CASE("Test case 1") {
 }
 
 TEST_CASE("Test case 2") {
+    vector<string> vecString2 = {"Hello", "Bye", "Nathan", "Adam"};
+    vector<float> vecFloat = {-1, 0.3, 5.2, -8.3};
+    vector<string> resualt = {"Hello", "HelloBye", "HelloByeNathan", "HelloByeNathanAdam"};
     int index = 0;
 
-    for (auto i: accumulate(vecString)){
+    for (auto i: accumulate(vecString2)){
         CHECK(i == resualt.at(index));
         index++;
     }
