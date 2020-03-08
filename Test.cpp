@@ -22,7 +22,7 @@ TEST_CASE("Test case 1") {
     int index = 0;
 
     for (auto i: accumulate(vecString)){
-        CHECK(i == (resualt.at(index)));
+        CHECK(i == string(resualt.at(index)));
         index++;
     }
     
@@ -35,7 +35,7 @@ TEST_CASE("Test case 2") {
     int index = 0;
 
     for (auto i: accumulate(vecString2)){
-        CHECK(i == (resualt.at(index)));
+        CHECK(i == string(resualt.at(index)));
         index++;
     }
     
