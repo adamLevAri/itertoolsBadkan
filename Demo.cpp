@@ -48,7 +48,7 @@ int main(int argc, const char * argv[]) {
     
     cout << "####  Accumulate & Cycle:  ####";
     cout << endl << "Cycle of Accumulate of string vector: " << endl;
-    for (auto i: cycle(Accumulate(vecString),2) )
+    for (auto i: cycle(accumulate(vecString),2) )
         cout << i << " ";
     cout << endl << endl;
     
