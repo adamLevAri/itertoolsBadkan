@@ -20,7 +20,7 @@ TEST_CASE("Test case 1") {
     vector<string> resualt = {"Hello", "HelloBye", "HelloByeNathan", "HelloByeNathanAdam"};
     int index = 0;
 
-    for (auto i: Accumulate(vecString)){
+    for (auto i: accumulate(vecString)){
         CHECK(i == resualt.at(index));
         index++;
     }
@@ -33,7 +33,7 @@ TEST_CASE("Test case 1") {
 TEST_CASE("Test case 2") {
     int index = 0;
 
-    for (auto i: Accumulate(vecString)){
+    for (auto i: accumulate(vecString)){
         CHECK(i == resualt.at(index));
         index++;
     }
