@@ -7,6 +7,7 @@
 //
 
 #include "doctest.h"
+#include "accumulate.hpp"
 #include <iostream>
 #include <vector>
 
