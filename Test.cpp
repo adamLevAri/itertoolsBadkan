@@ -10,8 +10,8 @@
 #include <iostream>
 #include <vector>
 
-Using namespace itertools;
-Using namespace std;
+using namespace itertools;
+using namespace std;
 
 TEST_CASE("Test case 1") {
    vector<int> vecInit = {1,2,3,4};
